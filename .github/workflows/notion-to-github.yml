@@ -1,0 +1,25 @@
+name: Run C# Script Manually
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Setup .NET 8
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '8.0'  # .NET バージョン
+
+    - name: Install Dependencies
+      run: dotnet restore
+      working-directory: ./src
+
+    - name: Run Sync Script
+      run: dotnet run
+      working-directory: ./src
