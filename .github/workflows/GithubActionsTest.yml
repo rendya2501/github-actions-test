@@ -16,6 +16,13 @@ jobs:
       with:
         dotnet-version: '8.0'
 
-    - name: Run Script
-      working-directory: ./src
-      run: dotnet run
+    # 案1
+    #- name: Run Script
+    #  working-directory: ./src
+    #  run: dotnet run
+  
+    # 案2
+    - name: Run Sctipt2
+      run: |
+        cd src
+        dotnet run
