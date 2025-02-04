@@ -17,4 +17,5 @@ jobs:
         dotnet-version: '8.0'
 
     - name: Run Script
+      working-directory: ./src
       run: dotnet run
