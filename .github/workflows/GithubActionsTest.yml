@@ -18,11 +18,15 @@ jobs:
 
     # 案1
     - name: Run Script1
-      working-directory: ./src
       run: dotnet run
+      working-directory: ./src
   
     # 案2
     - name: Run Sctipt2
       run: |
         cd src
         dotnet run
+
+    # 案3
+    - name: Run Script3
+      run: dotnet run --project ./src/GithubuActionsTest.csproj
