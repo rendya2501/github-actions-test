@@ -29,4 +29,4 @@ jobs:
 
     # 案3
     - name: Run Script3
-      run: dotnet run --project ./src/GithubuActionsTest.csproj
+      run: dotnet run --project ./src/GithubActionsTest.csproj
