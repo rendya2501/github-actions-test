@@ -1,4 +1,4 @@
-name: Run C# Script Manually
+name: Run CSharp Script Manually
 
 on:
   workflow_dispatch:
